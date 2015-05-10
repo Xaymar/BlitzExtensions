@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{5016ba8f-d781-40f4-9904-56cc2ce9a588}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Wrapper">
+      <UniqueIdentifier>{8f00e86e-e1bc-499e-8b2c-da93e9e8f287}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Steam.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="SteamClient.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="SteamUser.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="BlitzPointer.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="dllmain.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="BlitzPointer.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BlitzSteam.decls">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="BlitzSteam.bb">
+      <Filter>Source</Filter>
+    </None>
+  </ItemGroup>
+</Project>
