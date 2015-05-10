@@ -209,9 +209,13 @@ Function BlitzUtility_BorderlessWindowmode(hwnd=0, MonitorId=0, Width=0, Height=
 	
 	Local rct.BlitzUtility_Rectangle = New BlitzUtility_Rectangle
 	BlitzUtility_GetDisplay(MonitorId, rct)
+	Local rctW, rctH
+	rctW = (rct\X2 - rct\X)
+	rctH = (rct\Y2 - rct\Y)
 	
-	rct\X = rct\X + (rct\X2 / 2.0) - Width / 2.0
-	rct\Y = rct\Y + (rct\Y2 / 2.0) - Height / 2.0
+	
+	rct\X = rct\X + (rctW / 2.0) - Width / 2.0
+	rct\Y = rct\Y + (rctH / 2.0) - Height / 2.0
 	rct\X2 = Width
 	rct\Y2 = Height
 	BlitzUtility_User32_SetWindowLong hwnd, -16, $01000000

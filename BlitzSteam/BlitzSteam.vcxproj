@@ -62,21 +62,22 @@
       <WholeProgramOptimization>false</WholeProgramOptimization>
       <AdditionalIncludeDirectories>$(SolutionDir);$(ProjectDir);D:\Projects\Cpp\#Libraries\Steamworks SDK\public</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <BufferSecurityCheck>false</BufferSecurityCheck>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <StructMemberAlignment>4Bytes</StructMemberAlignment>
       <EnableParallelCodeGeneration>true</EnableParallelCodeGeneration>
       <CompileAsManaged>false</CompileAsManaged>
       <CompileAsWinRT>false</CompileAsWinRT>
-      <MultiProcessorCompilation>false</MultiProcessorCompilation>
-      <FunctionLevelLinking>false</FunctionLevelLinking>
-      <FloatingPointExceptions>
-      </FloatingPointExceptions>
-      <CreateHotpatchableImage>false</CreateHotpatchableImage>
-      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <CreateHotpatchableImage>true</CreateHotpatchableImage>
+      <RuntimeTypeInfo>
+      </RuntimeTypeInfo>
       <OpenMPSupport>false</OpenMPSupport>
-      <ForcedIncludeFiles>dllmain.h</ForcedIncludeFiles>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+      <MinimalRebuild>false</MinimalRebuild>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -95,7 +96,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Full</Optimization>
-      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>
       </SDLCheck>
@@ -108,14 +109,15 @@
       <EnableParallelCodeGeneration>true</EnableParallelCodeGeneration>
       <CompileAsManaged>false</CompileAsManaged>
       <CompileAsWinRT>false</CompileAsWinRT>
-      <MultiProcessorCompilation>false</MultiProcessorCompilation>
-      <FloatingPointExceptions>
-      </FloatingPointExceptions>
-      <CreateHotpatchableImage>false</CreateHotpatchableImage>
-      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <CreateHotpatchableImage>true</CreateHotpatchableImage>
+      <RuntimeTypeInfo>
+      </RuntimeTypeInfo>
       <OpenMPSupport>false</OpenMPSupport>
-      <ForcedIncludeFiles>dllmain.h</ForcedIncludeFiles>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <MinimalRebuild>true</MinimalRebuild>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>false</GenerateDebugInformation>
@@ -130,15 +132,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="BlitzPointer.cpp" />
     <ClCompile Include="dllmain.cpp" />
-    <ClCompile Include="Steam.cpp" />
-    <ClCompile Include="SteamClient.cpp" />
-    <ClCompile Include="SteamUser.cpp" />
+    <ClCompile Include="Libraries\BlitzPointer.cpp" />
+    <ClCompile Include="Wrapper\Steam.cpp" />
+    <ClCompile Include="Wrapper\SteamClient.cpp" />
+    <ClCompile Include="Wrapper\SteamUser.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="BlitzPointer.h" />
     <ClInclude Include="dllmain.h" />
+    <ClInclude Include="Libraries\BlitzPointer.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="BlitzSteam.bb">

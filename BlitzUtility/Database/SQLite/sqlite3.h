@@ -46,16 +46,16 @@ extern "C" {
 ** Provide the ability to override linkage features of the interface.
 */
 #ifndef SQLITE_EXTERN
-# define SQLITE_EXTERN extern
+# define SQLITE_EXTERN extern "C" __declspec(dllexport)
 #endif
 #ifndef SQLITE_API
-# define SQLITE_API __declspec(dllexport)
+# define SQLITE_API 
 #endif
 #ifndef SQLITE_CDECL
-# define SQLITE_CDECL __cdecl
+# define SQLITE_CDECL
 #endif
 #ifndef SQLITE_STDCALL
-# define SQLITE_STDCALL SQLITE_CDECL
+# define SQLITE_STDCALL
 #endif
 
 /*
@@ -111,9 +111,9 @@ extern "C" {
 ** [sqlite3_libversion_number()], [sqlite3_sourceid()],
 ** [sqlite_version()] and [sqlite_source_id()].
 */
-#define SQLITE_VERSION        "3.8.10"
+#define SQLITE_VERSION        "3.8.10.1"
 #define SQLITE_VERSION_NUMBER 3008010
-#define SQLITE_SOURCE_ID      "2015-04-19 23:11:10 c83052e48bbae0f45db2a44155b4e5482ee4a901"
+#define SQLITE_SOURCE_ID      "2015-05-09 12:14:55 05b4b1f2a937c06c90db70c09890038f6c98ec40"
 
 /*
 ** CAPI3REF: Run-Time Library Version Numbers

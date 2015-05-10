@@ -1,5 +1,5 @@
 #include "dllmain.h"
-#include "BlitzPointer.h"
+#include "BlitzPointerLink.cpp"
 
 class BlitzSteamCallback : CCallbackBase {
 public:

@@ -86,11 +86,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="BlitzUtility.decls">
-      <Filter>Source Files</Filter>
-    </None>
-    <None Include="BlitzUtility.bb">
-      <Filter>Source Files</Filter>
-    </None>
+    <None Include="BlitzUtility.decls" />
+    <None Include="BlitzUtility.bb" />
   </ItemGroup>
 </Project>

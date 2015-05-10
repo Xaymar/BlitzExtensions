@@ -3,7 +3,7 @@
 
 #include <list>
 #include "Containers\BlitzList.h"
-//#include "Database\SQLite\SQLite.h"
+#include "Database\SQLite\SQLite.h"
 #include "Math\Vector2.h"
 #include "Math\Vector3.h"
 #include "Math\Matrix3.h"
@@ -20,7 +20,7 @@ bool WINAPI DllMain(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved) {
 			// Math
 
 			// Database
-			//SQLite3_OnProcessAttach();
+			SQLite3_OnProcessAttach();
 
 			// Utility
 			Display_OnProcessAttach();
@@ -34,7 +34,7 @@ bool WINAPI DllMain(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved) {
 			// Math
 
 			// Database
-			//SQLite3_OnProcessDetach();
+			SQLite3_OnProcessDetach();
 
 			// Utility
 			Display_OnProcessDetach();

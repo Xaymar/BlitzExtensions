@@ -5,9 +5,15 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
+    <Filter Include="Blitz Files">
+      <UniqueIdentifier>{53eae672-7e3f-4de4-af1f-79e46e407a39}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BlitzPointer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -15,5 +21,16 @@
     <ClInclude Include="dllmain.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="BlitzPointer.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BlitzPointer.decls">
+      <Filter>Blitz Files</Filter>
+    </None>
+    <None Include="BlitzPointer.bb">
+      <Filter>Blitz Files</Filter>
+    </None>
   </ItemGroup>
 </Project>

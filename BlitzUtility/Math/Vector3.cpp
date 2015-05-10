@@ -172,30 +172,30 @@ void Vector3::rotateAround(Vector3 &o, float &pitch, float &yaw, float &roll)
 	this->add(o);
 }
 float Vector3::deltaPitch() {
-	return (float)atan(this->X / -this->Y) * (180.0 / M_PI);
+	return (float)(atan(this->X / -this->Y) * (180.0 / M_PI));
 }
 float Vector3::deltaPitch(const float &x, const float &y, const float &z)
 {
-	return (float)atan((this->X - x) / (-(this->Y - y))) * (180.0 / M_PI);
+	return (float)(atan((this->X - x) / (-(this->Y - y))) * (180.0 / M_PI));
 }
 float Vector3::deltaPitch(Vector3 &o)
 {
-	return (float)atan((this->X - o.X) / (-(this->Y - o.Y))) * (180.0 / M_PI);
+	return (float)(atan((this->X - o.X) / (-(this->Y - o.Y))) * (180.0 / M_PI));
 }
 float Vector3::deltaYaw() {
-	return (float)atan(sqrt((this->X * this->X) + (this->Y * this->Y)) / this->Z) * (180.0 / M_PI);
+	return (float)(atan(sqrt((this->X * this->X) + (this->Y * this->Y)) / this->Z) * (180.0 / M_PI));
 }
 float Vector3::deltaYaw(const float &x, const float &y, const float &z)
 {
 	float X = (this->X - x);
 	float Y = (this->Y - y);
-	return (float)atan(sqrt((X * X) + (Y * Y)) / (this->Z - z)) * (180.0 / M_PI);
+	return (float)(atan(sqrt((X * X) + (Y * Y)) / (this->Z - z)) * (180.0 / M_PI));
 }
 float Vector3::deltaYaw(Vector3 &o)
 {
 	float X = (this->X - o.X);
 	float Y = (this->Y - o.Y);
-	return (float)atan(sqrt((X * X) + (Y * Y)) / (this->Z - o.Z)) * (180.0 / M_PI);
+	return (float)(atan(sqrt((X * X) + (Y * Y)) / (this->Z - o.Z)) * (180.0 / M_PI));
 }
 
 char* Vector3::serialize()
