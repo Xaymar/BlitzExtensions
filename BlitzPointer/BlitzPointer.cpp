@@ -43,46 +43,66 @@ DLL_EXPORT uint32_t BlitzPointer_GetFunctionPointer() {
 	return 0;
 }
 
-uint32_t __declspec(naked) BlitzPointer_CallFunction() {
+__declspec(naked) uint32_t __BlitzPointer_CallFunction() {
 	__asm {
 		jmp eax
 	}
 }
 
 DLL_EXPORT uint32_t BlitzPointer_CallFunction0(uint32_t fpFunctionPointer) {
-	uint32_t returnvalue;
+	if (!fpFunctionPointer)
+		return 0;
+
 	__asm {
 		call dword ptr[fpFunctionPointer];
-		mov[returnvalue], eax;
 	}
-	return returnvalue;
+	uint32_t rv;
+	__asm {
+		mov[rv], eax;
+	}
+	return rv;
 }
+
 DLL_EXPORT uint32_t BlitzPointer_CallFunction1(uint32_t fpFunctionPointer, uint32_t p1) {
-	uint32_t returnvalue;
+	if (!fpFunctionPointer)
+		return 0;
+
 	__asm {
 		sub esp, 0x4;
 		mov eax, [p1];
 		mov[esp], eax;
 		call dword ptr[fpFunctionPointer];
-		mov[returnvalue], eax;
 	}
-	return returnvalue;
-}
-DLL_EXPORT uint32_t BlitzPointer_CallFunction2(uint32_t fpFunctionPointer, uint32_t p1, uint32_t p2) {
-	uint32_t returnvalue;
+	uint32_t rv;
 	__asm {
-		sub esp, 0x8
-			mov eax, [p2];
+		mov[rv], eax;
+	}
+	return rv;
+}
+
+DLL_EXPORT uint32_t BlitzPointer_CallFunction2(uint32_t fpFunctionPointer, uint32_t p1, uint32_t p2) {
+	if (!fpFunctionPointer)
+		return 0;
+
+	__asm {
+		sub esp, 0x8;
+		mov eax, [p2];
 		mov[esp + 4], eax;
 		mov eax, [p1];
 		mov[esp], eax;
 		call dword ptr[fpFunctionPointer];
-		mov[returnvalue], eax;
 	}
-	return returnvalue;
+	uint32_t rv;
+	__asm {
+		mov[rv], eax;
+	}
+	return rv;
 }
+
 DLL_EXPORT uint32_t BlitzPointer_CallFunction3(uint32_t fpFunctionPointer, uint32_t p1, uint32_t p2, uint32_t p3) {
-	uint32_t returnvalue;
+	if (!fpFunctionPointer)
+		return 0;
+
 	__asm {
 		sub esp, 0xC;
 		mov eax, [p3];
@@ -92,12 +112,18 @@ DLL_EXPORT uint32_t BlitzPointer_CallFunction3(uint32_t fpFunctionPointer, uint3
 		mov eax, [p1];
 		mov[esp], eax;
 		call dword ptr[fpFunctionPointer];
-		mov[returnvalue], eax;
 	}
-	return returnvalue;
+	uint32_t rv;
+	__asm {
+		mov[rv], eax;
+	}
+	return rv;
 }
+
 DLL_EXPORT uint32_t BlitzPointer_CallFunction4(uint32_t fpFunctionPointer, uint32_t p1, uint32_t p2, uint32_t p3, uint32_t p4) {
-	uint32_t returnvalue;
+	if (!fpFunctionPointer)
+		return 0;
+
 	__asm {
 		sub esp, 0x10;
 		mov eax, [p4];
@@ -109,9 +135,12 @@ DLL_EXPORT uint32_t BlitzPointer_CallFunction4(uint32_t fpFunctionPointer, uint3
 		mov eax, [p1];
 		mov[esp], eax;
 		call dword ptr[fpFunctionPointer];
-		mov[returnvalue], eax;
 	}
-	return returnvalue;
+	uint32_t rv;
+	__asm {
+		mov[rv], eax;
+	}
+	return rv;
 }
 
 DLL_EXPORT uint32_t BlitzPointer_CallFunctionS0(uint32_t fpFunctionPointer) {

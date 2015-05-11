@@ -57,7 +57,7 @@
       <SDLCheck>
       </SDLCheck>
       <AdditionalIncludeDirectories>$(SolutionDir);$(ProjectDir)</AdditionalIncludeDirectories>
-      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MultiProcessorCompilation>false</MultiProcessorCompilation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <BufferSecurityCheck>false</BufferSecurityCheck>
@@ -90,7 +90,7 @@
       <SDLCheck>
       </SDLCheck>
       <AdditionalIncludeDirectories>$(SolutionDir);$(ProjectDir)</AdditionalIncludeDirectories>
-      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MultiProcessorCompilation>false</MultiProcessorCompilation>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <BufferSecurityCheck>false</BufferSecurityCheck>
@@ -105,12 +105,14 @@
       <ForcedIncludeFiles>
       </ForcedIncludeFiles>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
-      <MinimalRebuild>true</MinimalRebuild>
+      <MinimalRebuild>false</MinimalRebuild>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>false</GenerateDebugInformation>
-      <EnableCOMDATFolding>true</EnableCOMDATFolding>
-      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>
+      </EnableCOMDATFolding>
+      <OptimizeReferences>
+      </OptimizeReferences>
       <Version>1.0</Version>
       <LinkStatus>
       </LinkStatus>
@@ -125,12 +127,36 @@
     <ClInclude Include="dllmain.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="BlitzPointer.bb">
-      <Link>BlitzPointer.bb</Link>
+    <None Include="Blitz\BlitzPointer.decls">
+      <Link>BlitzPointer.decls</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="BlitzPointer.decls">
-      <Link>BlitzPointer.decls</Link>
+    <None Include="Blitz\BlitzPointer.ipf">
+      <Link>Examples\BlitzPointer.ipf</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Blitz\Example_Shared.bb">
+      <Link>Examples\Example_Shared.bb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Blitz\Example01.bb">
+      <Link>Examples\Example01.bb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Blitz\Example02.bb">
+      <Link>Examples\Example02.bb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Blitz\Example03.bb">
+      <Link>Examples\Example03.bb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Blitz\Example04.bb">
+      <Link>Examples\Example04.bb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Blitz\Example05.bb">
+      <Link>Examples\Example05.bb</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>

@@ -7,6 +7,7 @@
     </Filter>
     <Filter Include="Blitz Files">
       <UniqueIdentifier>{53eae672-7e3f-4de4-af1f-79e46e407a39}</UniqueIdentifier>
+      <ParseFiles>false</ParseFiles>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -26,10 +27,28 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="BlitzPointer.decls">
+    <None Include="Blitz\Example05.bb">
       <Filter>Blitz Files</Filter>
     </None>
-    <None Include="BlitzPointer.bb">
+    <None Include="Blitz\BlitzPointer.decls">
+      <Filter>Blitz Files</Filter>
+    </None>
+    <None Include="Blitz\BlitzPointer.ipf">
+      <Filter>Blitz Files</Filter>
+    </None>
+    <None Include="Blitz\Example_Shared.bb">
+      <Filter>Blitz Files</Filter>
+    </None>
+    <None Include="Blitz\Example01.bb">
+      <Filter>Blitz Files</Filter>
+    </None>
+    <None Include="Blitz\Example02.bb">
+      <Filter>Blitz Files</Filter>
+    </None>
+    <None Include="Blitz\Example03.bb">
+      <Filter>Blitz Files</Filter>
+    </None>
+    <None Include="Blitz\Example04.bb">
       <Filter>Blitz Files</Filter>
     </None>
   </ItemGroup>
