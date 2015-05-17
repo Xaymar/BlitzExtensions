@@ -31,9 +31,6 @@
     <ClCompile Include="Database\SQLite\SQLite.cpp">
       <Filter>Source Files\Database\SQLite</Filter>
     </ClCompile>
-    <ClCompile Include="Database\SQLite\sqlite3.c">
-      <Filter>Source Files\Database\SQLite</Filter>
-    </ClCompile>
     <ClCompile Include="Math\Matrix3.cpp">
       <Filter>Source Files\Math</Filter>
     </ClCompile>
@@ -51,6 +48,9 @@
     </ClCompile>
     <ClCompile Include="Utility\WindowMessageHandler.cpp">
       <Filter>Source Files\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Database\SQLite\sqlite3.c">
+      <Filter>Source Files\Database\SQLite</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

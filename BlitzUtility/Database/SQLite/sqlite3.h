@@ -55,7 +55,7 @@ extern "C" {
 # define SQLITE_CDECL
 #endif
 #ifndef SQLITE_STDCALL
-# define SQLITE_STDCALL
+# define SQLITE_STDCALL __cdecl
 #endif
 
 /*

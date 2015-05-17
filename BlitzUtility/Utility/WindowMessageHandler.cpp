@@ -52,6 +52,7 @@ DLL_EXPORT void WindowMessageHandler_Install(HWND hwnd) {
 		UserData->oUserData = SetWindowLong(hwnd, GWL_USERDATA, (LONG)UserData);
 	}
 }
+#pragma comment(linker, "/EXPORT:WindowMessageHandler_Install=_WindowMessageHandler_Install@4")
 
 DLL_EXPORT void WindowMessageHandler_Uninstall(HWND hwnd) {
 	if (hwnd) {
@@ -63,6 +64,7 @@ DLL_EXPORT void WindowMessageHandler_Uninstall(HWND hwnd) {
 		}
 	}
 }
+#pragma comment(linker, "/EXPORT:WindowMessageHandler_Uninstall=_WindowMessageHandler_Uninstall@4")
 
 DLL_EXPORT int WindowMessageHandler_Message_Resize(HWND hwnd, LPPOINT point) {
 	if (hwnd) {
@@ -77,6 +79,7 @@ DLL_EXPORT int WindowMessageHandler_Message_Resize(HWND hwnd, LPPOINT point) {
 	}
 	return 0;
 }
+#pragma comment(linker, "/EXPORT:WindowMessageHandler_Message_Resize=_WindowMessageHandler_Message_Resize@8")
 
 DLL_EXPORT int WindowMessageHandler_Message_Destroy(HWND hwnd) {
 	if (hwnd) {
@@ -89,6 +92,7 @@ DLL_EXPORT int WindowMessageHandler_Message_Destroy(HWND hwnd) {
 	}
 	return 0;
 }
+#pragma comment(linker, "/EXPORT:WindowMessageHandler_Message_Destroy=_WindowMessageHandler_Message_Destroy@4")
 
 DLL_EXPORT int WindowMessageHandler_Message_Close(HWND hwnd) {
 	if (hwnd) {
@@ -101,4 +105,5 @@ DLL_EXPORT int WindowMessageHandler_Message_Close(HWND hwnd) {
 	}
 	return 0;
 }
+#pragma comment(linker, "/EXPORT:WindowMessageHandler_Message_Close=_WindowMessageHandler_Message_Close@4")
 
