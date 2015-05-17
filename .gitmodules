@@ -1,0 +1,3 @@
+[submodule "BlitzPointer"]
+	path = BlitzPointer
+	url = git@github.com:Xaymar/BlitzPointer.git
