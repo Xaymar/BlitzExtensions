@@ -1,3 +1,9 @@
 [submodule "BlitzPointer"]
 	path = BlitzPointer
 	url = git@github.com:Xaymar/BlitzPointer.git
+[submodule "BlitzUtility"]
+	path = BlitzUtility
+	url = git@github.com:Xaymar/BlitzUtility.git
+[submodule "BlitzSteam"]
+	path = BlitzSteam
+	url = git@github.com:Xaymar/BlitzSteam.git
