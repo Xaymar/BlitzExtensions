@@ -1,4 +1,4 @@
-/Build
-/Intermediate
+/#Build
+/#Intermediate
 *.sdf
 *.opensdf

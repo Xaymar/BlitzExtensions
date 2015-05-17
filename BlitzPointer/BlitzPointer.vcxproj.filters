@@ -17,6 +17,15 @@
     <ClCompile Include="BlitzPointer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="BlitzNative.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BlitzHybrid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MemoryHelpers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="dllmain.h">
@@ -49,6 +58,12 @@
       <Filter>Blitz Files</Filter>
     </None>
     <None Include="Blitz\Example04.bb">
+      <Filter>Blitz Files</Filter>
+    </None>
+    <None Include="Blitz\Example06.bb">
+      <Filter>Blitz Files</Filter>
+    </None>
+    <None Include="Blitz\Example07.bb">
       <Filter>Blitz Files</Filter>
     </None>
   </ItemGroup>

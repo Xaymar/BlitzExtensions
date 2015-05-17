@@ -1,5 +1,5 @@
 ; ---------------------------------------------------------------------------- ;
-; Example 2 - Calling Functions
+; Example 2 - Calling Functions (Beginner)
 ; ---------------------------------------------------------------------------- ;
 ; License: Creative Commons Attribution 2.0
 ; Author: Michael Fabian Dirks<michael.dirks@realitybends.de>
@@ -25,10 +25,9 @@ OurFunction()
 While Not KeyHit(1)
 	ExampleUpdate()
 	
-;   BlitzPointer offers many (one-thousand-three-hundred-sixty-four) ways of
-;    calling our function pointer. Each one describes different return types,
-;    parameter count and parameter types. Let's use the one that doesn't return
-;    a value (V for void) for now.
+;   BlitzPointer offers many ways of calling our function pointer. Each one
+;    describes different return types, parameter count and parameter types. 
+;   Let's use the one that doesn't return a value for now.
 	BlitzPointer_CallFunctionV fpOurFunction
 ;   Now if we run the program, instead of a fixed native call, we're calling a
 ;    function pointer instead. Pretty useful in my opinion, especially for UI,
