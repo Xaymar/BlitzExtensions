@@ -1,12 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.40302.0
+VisualStudioVersion = 12.0.40418.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BlitzSteam", "BlitzSteam\BlitzSteam.vcxproj", "{805CB1EB-82F0-405E-AC0B-03FBE82CC77D}"
-	ProjectSection(ProjectDependencies) = postProject
-		{AC8F52F4-9FE6-4CEF-B549-8180757020C8} = {AC8F52F4-9FE6-4CEF-B549-8180757020C8}
-	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BlitzUtility", "BlitzUtility\BlitzUtility.vcxproj", "{C08C5F9A-0C63-4798-A93F-FE96C014074B}"
 EndProject
