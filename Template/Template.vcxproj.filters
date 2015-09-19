@@ -15,7 +15,7 @@
     </Filter>
     <Filter Include="Blitz Files">
       <UniqueIdentifier>{3cc53e4a-ab2c-4fda-92e6-453166bb3baf}</UniqueIdentifier>
-      <Extensions>bb;decls</Extensions>
+      <Extensions>bb;decls;ipf</Extensions>
     </Filter>
   </ItemGroup>
   <ItemGroup>
