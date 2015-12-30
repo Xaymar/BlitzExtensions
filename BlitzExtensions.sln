@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.40418.0
+VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BlitzSteam", "BlitzSteam\BlitzSteam.vcxproj", "{805CB1EB-82F0-405E-AC0B-03FBE82CC77D}"
 	ProjectSection(ProjectDependencies) = postProject
@@ -13,11 +13,6 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BlitzPointer", "BlitzPointer\BlitzPointer.vcxproj", "{AC8F52F4-9FE6-4CEF-B549-8180757020C8}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Template", "Template\Template.vcxproj", "{EE818249-9F1E-4FB5-A1E0-604BCD9AFF77}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BlitzSQLite", "BlitzSQLite\BlitzSQLite.vcxproj", "{DA0440A3-4F72-44C0-BC27-57D9AA7B29C1}"
-	ProjectSection(ProjectDependencies) = postProject
-		{AC8F52F4-9FE6-4CEF-B549-8180757020C8} = {AC8F52F4-9FE6-4CEF-B549-8180757020C8}
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,10 +34,6 @@ Global
 		{AC8F52F4-9FE6-4CEF-B549-8180757020C8}.Release|Win32.Build.0 = Release|Win32
 		{EE818249-9F1E-4FB5-A1E0-604BCD9AFF77}.Debug|Win32.ActiveCfg = Debug|Win32
 		{EE818249-9F1E-4FB5-A1E0-604BCD9AFF77}.Release|Win32.ActiveCfg = Release|Win32
-		{DA0440A3-4F72-44C0-BC27-57D9AA7B29C1}.Debug|Win32.ActiveCfg = Debug|Win32
-		{DA0440A3-4F72-44C0-BC27-57D9AA7B29C1}.Debug|Win32.Build.0 = Debug|Win32
-		{DA0440A3-4F72-44C0-BC27-57D9AA7B29C1}.Release|Win32.ActiveCfg = Release|Win32
-		{DA0440A3-4F72-44C0-BC27-57D9AA7B29C1}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

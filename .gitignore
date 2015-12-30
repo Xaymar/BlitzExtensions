@@ -1,4 +1,10 @@
 /#Build
 /#Intermediate
+
+# Visual Studio Files
+*.suo
+*.v12.suo
 *.sdf
 *.opensdf
+*.opendb
+/.vs
