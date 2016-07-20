@@ -9,3 +9,4 @@
 *.VC.db
 *.vcxproj.user
 /.vs
+*.opendb
